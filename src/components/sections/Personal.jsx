@@ -174,9 +174,6 @@ export default function Personal() {
               <></>
             )}
           </div>
-
-          {/*<button id="myBtn">Open Modal</button>*/}
-
           <p>*Algunos datos no pueden ser editados.</p>
         </div>
       </div>
