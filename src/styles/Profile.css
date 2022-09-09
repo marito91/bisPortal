@@ -1,0 +1,176 @@
+/* Main Section -- Iconos y página de edición de perfil general */
+.profile-container {
+  margin-top: 5%;
+  display: flex;
+  color: #161840;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  width: 40%;
+}
+
+.sections div {
+  /*flex: 20%;*/
+  color: #161840;
+  width: 50%;
+  flex: 100%;
+  padding: 1%;
+}
+
+.sections div label:hover {
+  cursor: pointer;
+}
+
+.sections div img {
+  width: 128px;
+  height: 128px;
+}
+
+.sections div img:hover {
+  cursor: pointer;
+}
+
+.title-page {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-page div {
+  text-align: center;
+  width: 33%;
+}
+
+#title-div {
+  background-color: #dfb76d;
+  text-align: center;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.information {
+  width: 60%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+@media (max-width: 920px) {
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .sections {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .sections div {
+    width: 50%;
+    flex: 50%;
+  }
+
+  .sections div img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .title-page div {
+    text-align: center;
+    width: 20%;
+  }
+
+  #title-div {
+    background-color: #dfb76d;
+    text-align: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 60%;
+  }
+}
+
+/* Profile Information Components */
+.content {
+  padding: 4%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #161840;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #dfb76d;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #dfb76d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Form */
+.personal-info input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.personal-info input[type="submit"] {
+  width: 100%;
+  background-color: #dfb76d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.personal-info input[type="submit"]:hover {
+  background-color: #bc9b5c;
+}
+
+.personal-info div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: left;
+}
