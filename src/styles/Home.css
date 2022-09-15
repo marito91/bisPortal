@@ -15,7 +15,7 @@ body {
 * {
   font-family: "Lusitana";
   box-sizing: border-box;
-  font-size: large;
+  font-size: medium;
 }
 
 .top-nav {
@@ -197,13 +197,16 @@ body {
   background-color: #161840;
   border-radius: 4px;
   border: 1px solid #dfb76d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .login-form img {
   width: 128px;
   height: 150px;
+  margin-left: 20px;
 }
 
 .login-form form {
@@ -232,7 +235,7 @@ input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   background-color: #dfb76d;
-  color: white;
+  color: #161840;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -240,6 +243,16 @@ input[type="password"] {
 
 .login-form input[type="submit"]:hover {
   background-color: #bc9b5c;
+}
+
+#hidden-background {
+  display: none;
+}
+
+@media (max-width: 1236px) {
+  #logo {
+    display: none;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -251,6 +264,9 @@ input[type="password"] {
     background-color: #161840;
     border-radius: 4px;
     border: 1px solid #dfb76d;
+  }
+  #hidden-background {
+    display: block;
   }
 }
 

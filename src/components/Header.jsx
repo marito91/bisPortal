@@ -18,7 +18,11 @@ export default function Header(props) {
         <section class="top-nav">
           <div>
             <Link to="/home">
-              <img src={bislogo} style={{ width: "72", height: "60" }} alt="" />
+              <img
+                src={bislogo}
+                style={{ width: "70%", height: "48" }}
+                alt=""
+              />
             </Link>
           </div>
           <input id="menu-toggle" type="checkbox" />

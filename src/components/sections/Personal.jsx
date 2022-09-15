@@ -65,8 +65,8 @@ export default function Personal() {
     "Mario Andres",
     "Gómez Vargas",
     "Administrador",
-    "1044427366",
-    "21/10/2009",
+    "123456789",
+    "XX/XX/XXXX",
     "Puerto Colombia",
     "18/10/1991",
     "Barranquilla",
@@ -75,7 +75,7 @@ export default function Personal() {
     "3017823403",
     "magv181091@gmail.com",
     "Soltero",
-    "Cra. 55 # 75 - 119",
+    "Cra. 1 # 2 - 3",
     "Prado",
   ];
 

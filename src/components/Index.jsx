@@ -17,15 +17,17 @@ export default function Index() {
       <div className="login-page" style={{ position: "relative" }}>
         <img src={campus2} alt="" />
         <div className="login-form">
-          <img src={logo} alt="" />
+          <img id="logo" src={logo} alt="" />
           <form action="">
             <label htmlFor="">Usuario</label>
             <input type="text" />
             <label htmlFor="">Contraseña</label>
             <input type="password" />
             <input type="submit" value="Ingresar" />
+            <input id="google" type="submit" value="Sign in with Google" />
           </form>
         </div>
+        <img id="hidden-background" src={campus2} alt="" />
       </div>
     </>
   );
