@@ -15,7 +15,7 @@ export default function Header(props) {
   return (
     <>
       {loggedIn ? (
-        <section class="top-nav">
+        <section className="top-nav">
           <div>
             <Link to="/home">
               <img
@@ -26,10 +26,10 @@ export default function Header(props) {
             </Link>
           </div>
           <input id="menu-toggle" type="checkbox" />
-          <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
+          <label className="menu-button-container" htmlFor="menu-toggle">
+            <div className="menu-button"></div>
           </label>
-          <ul class="menu">
+          <ul className="menu">
             <li>
               <Link to="/edit_profile" className="header-links">
                 Perfil
@@ -69,7 +69,7 @@ export default function Header(props) {
               <img src={bislogo} style={{ width: "72", height: "60" }} alt="" />
             </Link>
           </div>
-          <ul class="menu">
+          <ul className="menu">
             <li className="header-links" id="title">
               Portal de Funcionarios
             </li>

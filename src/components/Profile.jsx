@@ -31,44 +31,33 @@ export default function Profile() {
       </div>
       <div className="profile-container">
         <div className="sections">
-          <div>
-            <img
-              src={resume}
-              alt=""
-              onClick={() => setSelected(<Personal />)}
-            />
+          <div onClick={() => setSelected(<Personal />)}>
+            <img src={resume} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Información Personal
             </label>
           </div>
-          <div>
-            <img src={family} alt="" onClick={() => setSelected(<Family />)} />
+          <div onClick={() => setSelected(<Family />)}>
+            <img src={family} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Información Familiar
             </label>
           </div>
-          <div>
-            <img
-              src={contract}
-              alt=""
-              onClick={() => setSelected(<Contracts />)}
-            />
+          <div onClick={() => setSelected(<Contracts />)}>
+            <img src={contract} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Historial Contractual
             </label>
           </div>
-          <div>
-            <img src={work} alt="" onClick={() => setSelected(<History />)} />
+          <div onClick={() => setSelected(<History />)}>
+            <img src={work} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Historial Laboral
             </label>
           </div>
-          <div>
-            <img
-              src={diploma}
-              alt=""
-              onClick={() => setSelected(<Studies />)}
-            />
+          <div id="last-div" onClick={() => setSelected(<Studies />)}>
+            <img src={diploma} alt="" />
+            <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Estudios
             </label>

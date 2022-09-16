@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import Accordion from "./Accordion";
+import React, { useState, useEffect } from "react";
 
 // CSS
 import "../../styles/Profile.css";
+
+// Components
+import Accordion from "./family/Accordion";
 
 export default function Family() {
   // Se inicia el estado del modal en falso para que esté escondido.
@@ -15,46 +17,16 @@ export default function Family() {
   const closeModal = () => {
     setIsActive(false);
   };
-  // No se aplica el close cuando se presiona por fuera de la ventana para que los que estén en móvil no la cierren sin querer
-
-  /*window.onload = function () {
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("modalBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementById("closeBtn");
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    };
-  };*/
-
   const familyMembers = [
     {
       nombre: "Erika Raquel Vargas Moreno",
       fecha: "XX/XX/XXXX",
       sexo: "Femenino",
       parentesco: "Madre",
-      teléfono: "3123456789",
-      dirección: "Cra. 1 # 2 - 3",
+      telefono: "3123456789",
+      direccion: "Cra. 1 # 2 - 3",
       ciudad: "Barranquilla",
-      ocupación: "Emplead@",
+      ocupacion: "Emplead@",
       estudios: "Bachiller",
     },
     {
@@ -62,11 +34,22 @@ export default function Family() {
       fecha: "XX/XX/XXXX",
       sexo: "Masculino",
       parentesco: "Padre",
-      teléfono: "3123456789",
-      dirección: "Cra. 1 # 2 - 3",
+      telefono: "3123456789",
+      direccion: "Cra. 1 # 2 - 3",
       ciudad: "Barranquilla",
-      ocupación: "Independiente",
+      ocupacion: "Independiente",
       estudios: "Universitario",
+    },
+    {
+      nombre: "Laura Andrea Gómez Vargas",
+      fecha: "XX/XX/XXXX",
+      sexo: "Femenino",
+      parentesco: "Herman@",
+      telefono: "3123456789",
+      direccion: "Cra. 1 # 2 - 3",
+      ciudad: "Barranquilla",
+      ocupacion: "Emplead@",
+      estudios: "Bachiller",
     },
   ];
 
@@ -74,172 +57,105 @@ export default function Family() {
     <>
       <div>
         <h3 style={{ textAlign: "center" }}>Información Familiar</h3>
-        <div className="family-container">
-          {familyMembers.map((member) => (
-            <>
-              <div className="member">
-                <div id="member">
-                  <label key={member.nombre} value={member.nombre} className="">
-                    Nombre:
-                  </label>
-                  <label key={member.nombre} value={member.nombre}>
-                    {member.nombre}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label key={member.fecha} value={member.fecha} className="">
-                    Fecha de Nacimiento:
-                  </label>
-                  <label key={member.fecha} value={member.fecha}>
-                    {member.fecha}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label key={member.sexo} value={member.sexo} className="">
-                    Sexo:
-                  </label>
-                  <label key={member.sexo} value={member.sexo}>
-                    {member.sexo}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-
-                <div id="member">
-                  <label
-                    key={member.parentesco}
-                    value={member.parentesco}
-                    className=""
-                  >
-                    Parentesco:
-                  </label>
-                  <label key={member.parentesco} value={member.parentesco}>
-                    {member.parentesco}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label
-                    key={member.teléfono}
-                    value={member.teléfono}
-                    className=""
-                  >
-                    Teléfono:
-                  </label>
-                  <label key={member.teléfono} value={member.teléfono}>
-                    {member.teléfono}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label
-                    key={member.dirección}
-                    value={member.dirección}
-                    className=""
-                  >
-                    Dirección:
-                  </label>
-                  <label key={member.dirección} value={member.dirección}>
-                    {member.dirección}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label key={member.ciudad} value={member.ciudad} className="">
-                    Ciudad:
-                  </label>
-                  <label key={member.ciudad} value={member.ciudad}>
-                    {member.ciudad}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label
-                    key={member.ocupación}
-                    value={member.ocupación}
-                    className=""
-                  >
-                    Ocupación:
-                  </label>
-                  <label key={member.ocupación} value={member.ocupación}>
-                    {member.ocupación}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-                <div id="member">
-                  <label
-                    key={member.estudios}
-                    value={member.estudios}
-                    className=""
-                  >
-                    Nivel de estudios:
-                  </label>
-                  <label key={member.estudios} value={member.estudios}>
-                    {member.estudios}
-                  </label>
-                </div>
-                <hr style={{ color: "#161840" }} />
-              </div>
-            </>
-          ))}
-
-          {/*<div
-            id="member-badge"
-            className="member"
-            onClick={() => setActiveMember(!activeMember)}
-          >
-            <div>{familyMembers.parentesco}</div>
-            <div>{activeMember ? "-" : "+"}</div>
-          </div>
-          {familyMembers.map(
+        {familyMembers.length === 0 ? (
+          <>
+            <h4 style={{ textAlign: "center" }}>
+              No hay información familiar disponible. Agrega un nuevo familiar.
+            </h4>
+            <button className="btn" id="modalBtn" onClick={handleClick}>
+              Agregar
+            </button>
+          </>
+        ) : (
+          familyMembers.map(
             ({
-              parentesco,
               nombre,
               fecha,
               sexo,
-              teléfono,
-              dirección,
+              parentesco,
+              telefono,
+              direccion,
               ciudad,
-              ocupación,
+              ocupacion,
               estudios,
             }) => (
               <Accordion
-                parentesco={parentesco}
                 nombre={nombre}
                 fecha={fecha}
                 sexo={sexo}
-                teléfono={teléfono}
-                dirección={dirección}
+                parentesco={parentesco}
+                telefono={telefono}
+                direccion={direccion}
                 ciudad={ciudad}
-                ocupación={ocupación}
+                ocupacion={ocupacion}
                 estudios={estudios}
               />
             )
-          )}
-          {/*activeMember && (
-            <div className="member">
-              {dataInfo.map((info) => (
-                <>
-                  <div
-                    style={{
-                      display: "flex",
-                      flex: "wrap",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <label key={info[0]} value={info[0]} className="">
-                      {info[0]}:
-                    </label>
-                    <label key={info[1]} value={info[1]}>
-                      {info[1]}
-                    </label>
+          )
+        )}
+        <div style={{ textAlign: "center", marginTop: "4%" }}>
+          <button className="btn" id="modalBtn" onClick={handleClick}>
+            Agregar
+          </button>
+          {isActive ? (
+            <div id="myModal" className="modal">
+              <div className="modal-content">
+                {/*<span className="close">&times;</span>*/}
+                <form action="" className="personal-info">
+                  <div>
+                    <label htmlFor="">Nombre completo:</label>
+                    <input required type="text" />
+                    <label htmlFor="">Fecha de Nacimiento:</label>
+                    <input required type="date" />
+                    <label htmlFor="">Sexo:</label>
+                    <select required name="sexo" id="sexo">
+                      <option value="-">-----</option>
+                      <option value="m">Masculino</option>
+                      <option value="f">Femenino</option>
+                      <option value="n">No binario</option>
+                    </select>
+                    <label htmlFor="">Parentesco:</label>
+                    <select required name="parentesco" id="sexo">
+                      <option value="-">-----</option>
+                      <option value="padre">Padre</option>
+                      <option value="madre">Madre</option>
+                      <option value="hermano">Herman@</option>
+                      <option value="hijo">Hij@</option>
+                    </select>
+                    <label htmlFor="">Teléfono:</label>
+                    <input required type="text" />
+                    <label htmlFor="">Dirección:</label>
+                    <input required type="text" />
+                    <label htmlFor="">Ciudad:</label>
+                    <input required type="text" />
+                    <label htmlFor="">Ocupación:</label>
+                    <select required name="Ocupacion" id="sexo">
+                      <option value="-">-----</option>
+                      <option value="desempleado">Desempleado</option>
+                      <option value="empleado">Empleado</option>
+                      <option value="independiente">Independiente</option>
+                      <option value="pensionado">Pensionado</option>
+                    </select>
+                    <label htmlFor="">Estudios:</label>
+                    <select required name="estudios" id="sexo">
+                      <option value="-">-----</option>
+                      <option value="bachiller">Bachiller</option>
+                      <option value="tecnico">Técnico o Tecnológico</option>
+                      <option value="universitario">Universitario</option>
+                      <option value="posgrado">Posgrado</option>
+                      <option value="maestria">Maestria</option>
+                    </select>
                   </div>
-                  <hr style={{ color: "#161840" }} />
-                </>
-              ))}
+                  <input type="submit" value="Agregar" />
+                </form>
+                <span className="close" onClick={closeModal} id="closeBtn">
+                  &times;
+                </span>
+              </div>
             </div>
-                  )*/}
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </>

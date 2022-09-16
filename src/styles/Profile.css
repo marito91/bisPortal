@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   padding: 2%;
   width: 40%;
+  flex-direction: row;
+  gap: 25px;
 }
 
 .sections div {
@@ -18,9 +20,10 @@
   width: 50%;
   flex: 100%;
   padding: 1%;
+  cursor: pointer;
 }
 
-.sections div label:hover {
+.sections div label {
   cursor: pointer;
 }
 
@@ -57,6 +60,10 @@
   padding-left: 2%;
 }
 
+#hidden {
+  display: none;
+}
+
 @media (max-width: 920px) {
   .profile-container {
     display: flex;
@@ -69,18 +76,26 @@
   }
 
   .sections {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 5%;
+    text-align: center;
   }
 
   .sections div {
     width: 50%;
-    flex: 50%;
+    flex: 25%;
+  }
+
+  #hidden {
+    /*text-align: center;*/
+    display: block;
   }
 
   .sections div img {
-    width: 96px;
-    height: 96px;
+    width: 64px;
+    height: 64px;
   }
 
   .title-page div {
@@ -176,6 +191,16 @@ select {
 }
 
 /* Profile Information Components */
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
 .family-container {
   display: flex;
   flex-wrap: wrap;
@@ -187,17 +212,21 @@ select {
 .member {
   border-radius: 0.5rem;
   border: 2px solid #161840;
+  padding: 1.5rem;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.parent {
+  border-radius: 0.5rem;
+  border: 2px solid #161840;
   padding: 0.5rem;
-  width: 65%;
-}
-
-#member-badge {
-  display: flex;
-  justify-content: space-between;
-}
-
-#member-badge:hover {
+  width: 100%;
   cursor: pointer;
+}
+
+.parent:hover {
+  background-color: #dfb76d;
+  color: #161840;
 }
 
 #member {

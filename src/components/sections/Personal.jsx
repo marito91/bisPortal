@@ -133,14 +133,14 @@ export default function Personal() {
                       <input required type="text" />
                       <label htmlFor="">Sexo:</label>
                       <select required name="sexo" id="sexo">
-                        <option value="m">-----</option>
+                        <option value="-">-----</option>
                         <option value="m">Masculino</option>
                         <option value="f">Femenino</option>
                         <option value="n">No binario</option>
                       </select>
                       <label htmlFor="">Libreta Militar:</label>
                       <select required name="libreta" id="lm">
-                        <option value="si">----</option>
+                        <option value="-">----</option>
                         <option value="si">Si</option>
                         <option value="no">No</option>
                         <option value="na">N/A</option>
@@ -151,7 +151,7 @@ export default function Personal() {
                       <input required type="text" />
                       <label htmlFor="">Estado Civil:</label>
                       <select required name="estado" id="ec">
-                        <option value="soltero">----</option>
+                        <option value="-">----</option>
                         <option value="soltero">Soltero(a)</option>
                         <option value="casado">Casado(a)</option>
                         <option value="divorciado">Divorciado(a)</option>
