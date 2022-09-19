@@ -33,78 +33,43 @@ export default function Profile() {
         <div className="sections">
           <div onClick={() => setSelected(<Personal />)}>
             <img src={resume} alt="" />
+            <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Información Personal
             </label>
           </div>
           <div onClick={() => setSelected(<Family />)}>
             <img src={family} alt="" />
+            <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Información Familiar
             </label>
           </div>
           <div onClick={() => setSelected(<Contracts />)}>
             <img src={contract} alt="" />
+            <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Historial Laboral
             </label>
           </div>
           <div onClick={() => setSelected(<Sociodemo />)}>
             <img src={work} alt="" />
+            <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Info. Sociodemográfica
             </label>
           </div>
+          {/*
           <div id="last-div" onClick={() => setSelected(<Studies />)}>
             <img src={diploma} alt="" />
             <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Estudios
             </label>
-          </div>
+          </div>*/}
         </div>
-        <div className="information">{selected}</div>
       </div>
-
-      {/*
-      <h1 style={{ textAlign: "center" }}>Editar perfil</h1>
-      <div>
-        <h3 style={{ textAlign: "center" }}>Tus datos</h3>
-        <div>
-          <label htmlFor="">Nombre:</label>&nbsp;&nbsp;&nbsp;
-          <label htmlFor="">Mario Andres Gomez Vargas</label>
-        </div>
-        <div>
-          <label htmlFor="">Documento de Identidad:</label>
-          &nbsp;&nbsp;&nbsp;
-          <label htmlFor="">1044427366</label>
-        </div>
-        <div>
-          <label htmlFor="">Fecha de Nacimiento:</label>&nbsp;&nbsp;&nbsp;
-          <label htmlFor="">18/10/1991</label>
-        </div>
-        <div>
-          <label htmlFor="">Correo:</label>&nbsp;&nbsp;&nbsp;
-          <label htmlFor="">mariogomez@britishschool.edu.co</label>
-        </div>
-        <div>
-          <label htmlFor="">Dirección:</label>&nbsp;&nbsp;&nbsp;
-          <input type="text" />
-        </div>
-        <div>
-          <label htmlFor="">Teléfono:</label>&nbsp;&nbsp;&nbsp;
-          <input type="text" />
-        </div>
-        <div>
-          <label htmlFor="">Correo personal:</label>&nbsp;&nbsp;&nbsp;
-          <input type="text" />
-        </div>
-        <div style={{ textAlign: "center", marginTop: "4%" }}>
-          <button className="btn">Confirmar</button>
-        </div>
-        <p>*Algunos datos no pueden ser editados.</p>
-      </div>
-  */}
+      <div className="information">{selected}</div>
     </div>
   );
 }
