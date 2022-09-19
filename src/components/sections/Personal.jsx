@@ -123,12 +123,17 @@ export default function Personal() {
                       <input required type="text" />
                       <label htmlFor="">Documento de Identidad:</label>
                       <input required type="text" />
-                      <label htmlFor="">Fecha de Expedición:</label>
-                      <input required type="date" />
+                      <label style={{ width: "100%" }} htmlFor="">
+                        Fecha de Expedición:
+                      </label>
+                      <input style={{ width: "100%" }} required type="date" />{" "}
+                      <br />
                       <label htmlFor="">Ciudad de Expedición:</label>
                       <input required type="text" />
-                      <label htmlFor="">Fecha de Nacimiento:</label>
-                      <input required type="date" />
+                      <label style={{ width: "100%" }} htmlFor="">
+                        Fecha de Nacimiento:
+                      </label>
+                      <input required type="date" /> <br />
                       <label htmlFor="">Lugar de Nacimiento:</label>
                       <input required type="text" />
                       <label htmlFor="">Sexo:</label>

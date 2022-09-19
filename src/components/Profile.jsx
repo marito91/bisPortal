@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Personal from ".//sections/Personal";
 import Family from ".//sections/Family";
 import Contracts from ".//sections/Contracts";
-import History from ".//sections/History";
+import Sociodemo from "./sections/Sociodemo";
 import Studies from ".//sections/Studies";
 
 // Media
@@ -46,13 +46,13 @@ export default function Profile() {
           <div onClick={() => setSelected(<Contracts />)}>
             <img src={contract} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
-              Historial Contractual
+              Historial Laboral
             </label>
           </div>
-          <div onClick={() => setSelected(<History />)}>
+          <div onClick={() => setSelected(<Sociodemo />)}>
             <img src={work} alt="" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
-              Historial Laboral
+              Info. Sociodemográfica
             </label>
           </div>
           <div id="last-div" onClick={() => setSelected(<Studies />)}>

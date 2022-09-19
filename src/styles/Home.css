@@ -249,13 +249,13 @@ input[type="password"] {
   display: none;
 }
 
-@media (max-width: 1236px) {
+@media (max-width: 1326px) {
   #logo {
     display: none;
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1148px) {
   .login-page img {
     display: none;
   }

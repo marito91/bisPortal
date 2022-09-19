@@ -116,8 +116,11 @@ export default function Accordion({
               <div>
                 <label htmlFor="">Nombre completo:</label>
                 <input required type="text" />
-                <label htmlFor="">Fecha de Nacimiento:</label>
+                <label style={{ width: "100%" }} htmlFor="">
+                  Fecha de Nacimiento:
+                </label>
                 <input required type="date" />
+                <br />
                 <label htmlFor="">Sexo:</label>
                 <select required name="sexo" id="sexo">
                   <option value="-">-----</option>
