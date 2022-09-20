@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Index from "./components/Index";
 import Profile from "./components/Profile";
+import Requests from "./components/Requests";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { useState } from "react";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/home" element={<Homepage />} />
           <Route path="/edit_profile" element={<Profile />} />
+          <Route path="/requests" element={<Requests />} />
         </Routes>
         <Footer />
       </BrowserRouter>

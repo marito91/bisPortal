@@ -215,14 +215,14 @@ textarea {
 
 .member {
   border-radius: 0.5rem;
-  border: 2px solid #161840;
+  border: 1px solid #161840;
   padding: 1.5rem;
   width: 100%;
   margin-bottom: 1%;
 }
 .parent {
   border-radius: 0.5rem;
-  border: 2px solid #161840;
+  border: 1px solid #161840;
   padding: 0.5rem;
   width: 100%;
   cursor: pointer;

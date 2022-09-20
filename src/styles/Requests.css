@@ -1,0 +1,119 @@
+.requests-section {
+  margin-top: 5%;
+  display: flex;
+  color: #161840;
+}
+
+.requests-section h3 {
+  text-align: center;
+}
+
+.updates {
+  width: 50%;
+  border-right: 1px solid #161840;
+}
+
+.requests {
+  width: 50%;
+}
+
+.updates div {
+  padding: 1rem;
+}
+
+.option {
+  display: flex;
+  border-radius: 0.5rem;
+  border: 1px solid #161840;
+  padding: 1rem;
+  margin: 2%;
+}
+
+.recent {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.recent div {
+  border-radius: 0.5rem;
+  border: 1px solid #161840;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.recent div:hover {
+  background-color: #dfb76d;
+}
+
+.requests div {
+  padding: 1rem;
+}
+
+.requests form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.requests form input {
+  text-align: center;
+}
+
+.requests input[type="submit"] {
+  background-color: #ccc;
+  color: #161840;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.files {
+  display: flex;
+}
+
+.requests input[type="submit"]:hover {
+  background-color: #dfb76d;
+}
+
+#option:empty {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .requests-section {
+    flex-direction: column;
+  }
+
+  .updates {
+    width: 100%;
+    border-right: none;
+  }
+
+  .requests {
+    width: 100%;
+  }
+
+  .recent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2%;
+  }
+
+  .recent div {
+    width: 48%;
+  }
+
+  .files {
+    flex-direction: column;
+  }
+}
