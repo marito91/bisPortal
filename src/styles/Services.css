@@ -1,0 +1,89 @@
+.services-section {
+  margin-top: 5%;
+  display: flex;
+  color: #161840;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  width: 100%;
+  gap: 25px;
+}
+
+.services div {
+  color: #161840;
+  width: 50%;
+  flex: 20%;
+  padding: 1%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.services div label {
+  cursor: pointer;
+}
+
+.services div img {
+  width: 128px;
+  height: 128px;
+}
+
+.services div img:hover {
+  cursor: pointer;
+}
+
+.kc {
+  color: #161840;
+}
+
+.kc h3 {
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.kc h5 {
+  padding: 12px 20px;
+}
+
+.kc form {
+  background-color: #dfb76d;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  margin: 1px 0;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kc form input,
+select {
+  width: 100%;
+  margin-bottom: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.kc form div {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.kc form input[type="submit"] {
+  width: 20%;
+  margin-bottom: 2%;
+  background-color: #161840;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service-requests {
+  background-color: #dfb76d;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

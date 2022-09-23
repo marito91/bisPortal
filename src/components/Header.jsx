@@ -41,12 +41,12 @@ export default function Header(props) {
               </Link>
             </li>
             <li>
-              <Link to="/home" className="header-links">
+              <Link to="/services" className="header-links">
                 Servicios
               </Link>
             </li>
             <li>
-              <Link to="/home" className="header-links">
+              <Link to="/payments" className="header-links">
                 Pagos
               </Link>
             </li>

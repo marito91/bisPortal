@@ -5,12 +5,10 @@ import Personal from ".//sections/Personal";
 import Family from ".//sections/Family";
 import Contracts from ".//sections/Contracts";
 import Sociodemo from "./sections/Sociodemo";
-import Studies from ".//sections/Studies";
 
 // Media
 import resume from "../assets/icons/resume.png";
 import family from "../assets/icons/family.png";
-import diploma from "../assets/icons/diploma.png";
 import work from "../assets/icons/work.png";
 import contract from "../assets/icons/contract.png";
 
@@ -18,7 +16,6 @@ import contract from "../assets/icons/contract.png";
 import "../styles/Profile.css";
 
 export default function Profile() {
-  // const sections = ["resume", "family", "diploma", "work", "contract"];
   const [selected, setSelected] = useState(<Personal />);
   return (
     <div>
@@ -59,14 +56,6 @@ export default function Profile() {
               Info. Sociodemográfica
             </label>
           </div>
-          {/*
-          <div id="last-div" onClick={() => setSelected(<Studies />)}>
-            <img src={diploma} alt="" />
-            <br id="hidden" />
-            <label htmlFor="" style={{ marginLeft: "2%" }}>
-              Estudios
-            </label>
-          </div>*/}
         </div>
       </div>
       <div className="information">{selected}</div>
