@@ -9,6 +9,8 @@ import it from "../assets/icons/it.png";
 import admin from "../assets/icons/admin.png";
 import events from "../assets/icons/events.png";
 import KnowledgeCentre from "./services/KnowledgeCentre";
+import Tics from "./services/Tics";
+import Admin from "./services/Admin";
 
 // Components
 import "./services/KnowledgeCentre";
@@ -33,56 +35,21 @@ export default function Services() {
               Knowledge Centre
             </label>
           </div>
-          <div onClick={() => setSelected(<></>)}>
+          <div onClick={() => setSelected(<Tics />)}>
             <img src={it} alt="" />
             <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               TICs
             </label>
           </div>
-          <div onClick={() => setSelected(<></>)}>
+          <div onClick={() => setSelected(<Admin />)}>
             <img src={admin} alt="" />
             <br id="hidden" />
             <label htmlFor="" style={{ marginLeft: "2%" }}>
               Administración
             </label>
           </div>
-          {/*<div onClick={() => setSelected(<></>)}>
-            <img src={events} alt="" />
-            <br id="hidden" />
-            <label htmlFor="" style={{ marginLeft: "2%" }}>
-              Eventos
-            </label>
-  </div>*/}
         </div>
-        {/*<div>
-          <h5>Knowledge Centre</h5>
-          <ul>
-            <li>ChromeBooks</li>
-            <li>iPads</li>
-            <li>Biblioteca Primaria</li>
-            <li>Biblioteca Secundaria</li>
-          </ul>
-        </div>
-        <div>
-          <h5>TICs</h5>
-          <ul>
-            <li>Soporte</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Administración</h5>
-          <ul>
-            <li>Reporte daño</li>
-            <li>Solicitud de Pedido</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Eventos</h5>
-          <ul>
-            <li>Solicitud Apoyo Eventos</li>
-          </ul>
-        </div>*/}
       </div>
       <div className="information">{selected}</div>
     </div>

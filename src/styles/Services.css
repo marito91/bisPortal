@@ -87,3 +87,10 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+@media (max-width: 920px) {
+  .services div img {
+    width: 64px;
+    height: 64px;
+  }
+}

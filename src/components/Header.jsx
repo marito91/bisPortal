@@ -12,6 +12,13 @@ import "../styles/Home.css";
 
 export default function Header(props) {
   const [loggedIn, setLoggedIn] = useState(true);
+
+  function closeMenu() {
+    document.getElementsByClassName("menu").style.display = "none";
+  }
+
+  var localHost = "localhost:3000";
+
   return (
     <>
       {loggedIn ? (
@@ -31,27 +38,43 @@ export default function Header(props) {
           </label>
           <ul className="menu">
             <li>
-              <Link to="/edit_profile" className="header-links">
+              <Link
+                to="/edit_profile"
+                className="header-links"
+                onClick={() => closeMenu()}
+              >
                 Perfil
               </Link>
             </li>
             <li>
-              <Link to="/requests" className="header-links">
+              <Link
+                to="/requests"
+                className="header-links"
+                onClick={() => closeMenu()}
+              >
                 Solicitudes
               </Link>
             </li>
             <li>
-              <Link to="/services" className="header-links">
+              <Link
+                to="/services"
+                className="header-links"
+                onClick={() => closeMenu()}
+              >
                 Servicios
               </Link>
             </li>
             <li>
-              <Link to="/payments" className="header-links">
+              <Link
+                to="/payments"
+                className="header-links"
+                onClick={() => closeMenu()}
+              >
                 Pagos
               </Link>
             </li>
             <li>
-              <Link to="/" className="header-links">
+              <Link to="/" className="header-links" onClick={() => closeMenu()}>
                 Cerrar Sesión
               </Link>
             </li>

@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 
 export default function KnowledgeCentre() {
+  // En este componente, cada vez que se llena un formulario se debe reenviar esa información al correo de los encargados y al usuario que hizo la solicitud con el fin de que haya constancia.
   return (
     <div className="kc">
       <h3 style={{ textAlign: "center" }}>Knowledge Centre</h3>
@@ -98,6 +99,14 @@ export default function KnowledgeCentre() {
                     <option value="">No</option>
                     <option value="">Sí</option>
                   </select>
+                  <label htmlFor="">Otras especificaciones y detalles</label>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="7"
+                    placeholder="Indique si necesita estación de café, organización de sillas, etc."
+                  ></textarea>
                   <div>
                     <input type="submit" value="Solicitar" />
                   </div>
